@@ -9,4 +9,4 @@ This is a simple Chrome extension to download videos from [cda.pl](https://www.c
 3. Enable developer mode
 4. Drag and drop zip package to browser
 
-**Note:** extension will work on `https://www.cda.pl/video/*` pages
+**Note:** extension will work on `https://www.cda.pl/video/*` pages only!

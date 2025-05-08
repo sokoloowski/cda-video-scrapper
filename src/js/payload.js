@@ -1,6 +1,5 @@
-// send the page title as a chrome message
-var video = document.getElementsByTagName("video");
-if (video.length > 0) {
-    var videoUrl = video[0].getAttribute("src");
-    chrome.runtime.sendMessage(videoUrl);
-}
+var video = JSON.parse(document.querySelector('div[player_data]').attributes['player_data'].value)['video']
+chrome.runtime.sendMessage(
+    video['file'] ||
+    video['manifest_apple']
+);

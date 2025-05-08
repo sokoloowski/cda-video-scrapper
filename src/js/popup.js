@@ -7,8 +7,5 @@ window.addEventListener("load", function (evt) {
 
 // Listen to messages from the payload.js script and write to popout.html
 chrome.runtime.onMessage.addListener(function (message) {
-    $("#download").text("Download")
-		.attr("href", message)
-		.removeClass("btn-danger")
-		.addClass("btn-success");
+    document.getElementById("m3u8").innerText = message;
 });
